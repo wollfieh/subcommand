@@ -13,8 +13,10 @@ func main() {
 	// 	med.NewMed("levo", 47+5+200, carbon.Parse("2023-10-18"), 3, 14),
 	// }
 	// meds[0].Dump()
-	m := med.NewMed("prami", 293+100, carbon.Parse("2023-10-18"), 2, 14)
-	m.Dump()
+	p := med.NewMed("prami", 336, carbon.Parse("2023-11-05"), 2, 14)
+	l := med.NewMed("levo", 198, carbon.Parse("2023-11-05"), 2, 14)
+	p.Dump()
+	l.Dump()
 
 	commands.Initialize()
 
