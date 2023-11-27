@@ -8,15 +8,17 @@ import (
 
 func main() {
 
-	// var meds [2]*med.Med = [2]*med.Med{
-	// 	med.NewMed("prami", 293+100, carbon.Parse("2023-10-18"), 2, 14),
-	// 	med.NewMed("levo", 47+5+200, carbon.Parse("2023-10-18"), 3, 14),
-	// }
+	var meds [2]*med.Med = [2]*med.Med{
+		med.NewMed("prami", 293+100, carbon.Parse("2023-10-18"), 2, 14),
+		med.NewMed("levo", 47+5+200, carbon.Parse("2023-10-18"), 3, 14),
+	}
+	for _, v := range meds {
+		v.Dump()
+
+	}
 	// meds[0].Dump()
-	p := med.NewMed("prami", 336, carbon.Parse("2023-11-05"), 2, 14)
-	l := med.NewMed("levo", 198, carbon.Parse("2023-11-05"), 2, 14)
-	p.Dump()
-	l.Dump()
+	// m := med.NewMed("prami", 293+100, carbon.Parse("2023-10-18"), 2, 14)
+	// m.Dump()
 
 	commands.Initialize()
 
