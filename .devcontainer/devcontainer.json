@@ -1,0 +1,24 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/go:1.21",
+    "name": "Codespaces Go",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+              "golang.go"
+            ],
+            "settings": {
+                "files.exclude": {
+                    "**/.git": true,
+                    "**/.svn": true,
+                    "**/.hg": true,
+                    "**/CVS": true,
+                    "**/.DS_Store": true,
+                    "**/Thumbs.db": true,
+                    "**/CODE_OF_CONDUCT.md": true,
+                    "**/LICENSE": true
+                }
+            }
+        }
+    }
+}
+
